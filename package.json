@@ -1,0 +1,26 @@
+{
+  "name": "winter-cocoa",
+  "displayName": "Winter Cocoa",
+  "description": "A warm, dark theme built from espresso, walnut, and slate — inspired by the Manly Winter - Winter Cocoa palette.",
+  "version": "0.1.0",
+  "publisher": "ckinkadedarling",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes"],
+  "keywords": ["dark", "brown", "warm", "cocoa", "python", "winter"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Winter Cocoa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/winter-cocoa-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CKDarling/winter-cocoa-theme"
+  }
+}
