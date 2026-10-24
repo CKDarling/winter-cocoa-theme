@@ -2,6 +2,8 @@
 
 A warm, dark theme built from the **Manly Winter — Winter Cocoa** color palette.
 
+![Winter Cocoa in VS Code, showing a Python file next to a legend of what each color is used for](https://raw.githubusercontent.com/CKDarling/winter-cocoa-theme/main/images/showcase.png)
+
 ## Palette
 
 | Swatch | Hex | Role |
@@ -49,7 +51,7 @@ Then press `Cmd+K Cmd+T` (`Ctrl+K Ctrl+T` on Windows/Linux) and pick **Winter Co
 
 ## Try it on Python
 
-[`examples/orders.py`](https://github.com/CKDarling/winter-cocoa-theme/blob/main/examples/orders.py) is a short file that uses most of the Python colors: strings, docstrings, decorators, f-strings with escapes, type hints, `self`, constants and `__name__`. Open it with the theme active to see the palette at work.
+The screenshot above is [`examples/orders.py`](https://github.com/CKDarling/winter-cocoa-theme/blob/main/examples/orders.py), a short file that uses most of the Python colors: strings, docstrings, decorators, f-strings with escapes, type hints, `self`, constants and `__name__`. Download it and open it with the theme active to see the same thing in your editor.
 
 ## Development
 
@@ -58,6 +60,8 @@ Open this folder in VS Code and press `F5` to launch a window with the theme loa
 ```bash
 npx @vscode/vsce package      # build winter-cocoa-<version>.vsix
 ```
+
+The screenshot is rendered from `scripts/showcase/showcase.html`; run `scripts/render_showcase.sh` (needs Google Chrome) after changing colors.
 
 Pushing a `v*` tag publishes through [.github/workflows/publish.yml](https://github.com/CKDarling/winter-cocoa-theme/blob/main/.github/workflows/publish.yml).
 

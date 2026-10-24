@@ -4,3 +4,5 @@ examples/**
 *.vsix
 scripts/**
 .github/**
+images/showcase.png
+images/swatches/**
