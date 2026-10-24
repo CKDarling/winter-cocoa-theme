@@ -41,7 +41,7 @@ A warm, dark theme built from the **Manly Winter — Winter Cocoa** color palett
 
 ## Forty-Seven Arms
 
-![A sunflower seed head lighting up its 47 spiral arms one at a time, in dusty rose and warm sand](images/count-arms.gif)
+![A sunflower seed head lighting up its 47 spiral arms one at a time, in slate and cream](images/count-arms.gif)
 
 Most sunflowers grow their seeds in Fibonacci spirals. A few follow the Lucas sequence instead (2, 1, 3, 4, 7, 11, 18, 29, 47), turning each seed 99.50° past the last, and show 47 spiral arms. 47 is also a safe prime: 47 = 2 × 23 + 1, and 23 is prime. [`examples/sunflower.py`](examples/sunflower.py) works this out, and [`examples/count_arms.py`](examples/count_arms.py) draws the same animation in VS Code's terminal using the theme's ANSI colors.
 

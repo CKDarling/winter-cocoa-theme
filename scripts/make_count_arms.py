@@ -19,7 +19,7 @@ ARMS = 47
 LUCAS_ANGLE = 2 * math.pi / (2 + (1 + math.sqrt(5)) / 2)  # 99.50°
 
 INK, SEED = "#1a1210", "#3b2f2f"
-ROSE, SAND, SLATE = "#c4978c", "#d4b99a", "#708090"
+SLATE, CREAM = "#708090", "#d9d6cf"
 
 
 def font(size):
@@ -52,7 +52,7 @@ def frame(shown, rank, label_font):
         y = mid + r * math.sin(n * LUCAS_ANGLE)
         s = c * (0.36 + 0.14 * math.sqrt(n / SEEDS))
         arm = rank[n % ARMS]
-        fill = (SAND if arm % 2 else ROSE) if arm < shown else SEED
+        fill = (CREAM if arm % 2 else SLATE) if arm < shown else SEED
         draw.ellipse((x - s, y - s, x + s, y + s), fill=fill)
 
     count, rest = f"{shown}", f" of {ARMS} arms"
@@ -60,7 +60,7 @@ def frame(shown, rank, label_font):
     count_w = draw.textlength(count, font=label_font)
     x = W * SS - 12 * SS - rest_w
     y = H * SS - 34 * SS
-    draw.text((x - count_w, y), count, font=label_font, fill=ROSE)
+    draw.text((x - count_w, y), count, font=label_font, fill=CREAM)
     draw.text((x, y), rest, font=label_font, fill=SLATE)
     return img.resize((W, H), Image.LANCZOS)
 
