@@ -18,8 +18,8 @@
   "colors": {
     "editor.background":                "#1a1210",
     "editor.foreground":                "#d9d6cf",
-    "editor.lineHighlightBackground":   "#1a121040",
-    "editor.selectionBackground":       "#3b2f2f66",
+    "editor.lineHighlightBackground":   "#3b2f2f55",
+    "editor.selectionBackground":       "#5c4033aa",
     "editor.selectionHighlightBackground": "#3b2f2f33",
     "editor.wordHighlightBackground":   "#3b2f2f40",
     "editor.wordHighlightStrongBackground": "#3b2f2f55",
@@ -192,17 +192,22 @@
     {
       "name": "Comments",
       "scope": ["comment", "punctuation.definition.comment"],
-      "settings": { "foreground": "#8aaec2", "fontStyle": "italic" }
+      "settings": { "foreground": "#708090", "fontStyle": "italic" }
     },
     {
       "name": "Strings",
       "scope": ["string", "string.quoted", "punctuation.definition.string"],
-      "settings": { "foreground": "#d9d6cf" }
+      "settings": { "foreground": "#a3b08a" }
     },
     {
       "name": "Docstrings",
       "scope": ["string.quoted.docstring", "string.quoted.multi"],
-      "settings": { "foreground": "#d9d6cf", "fontStyle": "italic" }
+      "settings": { "foreground": "#a3b08a", "fontStyle": "italic" }
+    },
+    {
+      "name": "Escape sequences",
+      "scope": ["constant.character.escape"],
+      "settings": { "foreground": "#c09878" }
     },
     {
       "name": "F-string braces",
@@ -212,6 +217,21 @@
         "punctuation.definition.interpolation.end"
       ],
       "settings": { "foreground": "#c09878" }
+    },
+    {
+      "name": "Magic variables (__name__, __file__)",
+      "scope": ["support.variable.magic.python"],
+      "settings": { "foreground": "#84aeb8", "fontStyle": "italic" }
+    },
+    {
+      "name": "ALL_CAPS constants",
+      "scope": ["constant.other.caps", "constant.other.caps.python"],
+      "settings": { "foreground": "#a07850" }
+    },
+    {
+      "name": "global / nonlocal",
+      "scope": ["storage.modifier.declaration.python"],
+      "settings": { "foreground": "#c4978c" }
     },
     {
       "name": "Regex",
@@ -570,10 +590,10 @@
     "operator": "#d9d6cfbb",
 
     // ── Comments ──────────────────────────────────────────────
-    "comment": { "foreground": "#d9d6cf", "fontStyle": "italic" },
+    "comment": { "foreground": "#708090", "fontStyle": "italic" },
 
     // ── Strings & regex ───────────────────────────────────────
-    "string": "#8aaec2",
+    "string": "#a3b08a",
     "regexp": "#d9d6cf",
 
     // ── Numbers ───────────────────────────────────────────────
@@ -613,7 +633,7 @@
     // ── Classes & types ───────────────────────────────────────
     "class": "#d4b99a",
     "class.declaration": { "foreground": "#d4b99a", "fontStyle": "bold" },
-    "class.defaultLibrary": "#d4b99a",
+    "class.defaultLibrary": "#84aeb8",
     "type": "#84aeb8",
     "type.declaration": "#84aeb8",
     "type.defaultLibrary": "#84aeb8",
