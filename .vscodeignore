@@ -3,3 +3,4 @@ examples/**
 .gitignore
 *.vsix
 scripts/**
+.github/**
