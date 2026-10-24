@@ -5,6 +5,11 @@
   "version": "0.1.0",
   "publisher": "CKinkadeDarling",
   "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1a1210",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
